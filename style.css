@@ -4,8 +4,13 @@
     box-sizing: border-box;
 }
 
+body {
+    width: 100%;
+    
+}
+
 nav {
-    width: 100vw;
+    
     height: 70px;
     padding: 20px;
     display: flex;
@@ -14,45 +19,111 @@ nav {
 
 .Menu {
     display: flex;
+    p {
+        margin-left: 5px;
+    }
 }
 
 section {
-    width: 100vw;
+    
     padding: 20px;
 }
 
 .listProd {
     width: 100%;
     height: auto;
+
 }
 
 .producto {
-    width: 100%;
+    /*width: 100%;*/
+    /*min-width: 260px;
+    max-width: 410px;*/
+    min-width: 220px;
+    max-width: 300px;
     height: 300px;
     border: 1px gray solid;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 0 auto;
+    margin-bottom: 10px;
 
     img {
-        min-width: 250px;
-        max-width: 400px;
+        
+       /* min-width: 250px;
+        max-width: 400px; */
+        width: 90%;
         height: 90%;
+
     }
+
+    
 }
 
 .options {
     display: flex;
     justify-content: space-between;
-    padding: 20px;
+    padding: 10px;
+    margin-top: 20px;
+
+    p {
+        margin-right: 7px;
+    }
 }
 
 footer {
+    
     display: flex;
     flex-direction: column;
-    /*justify-self: center;*/
+    
     div {
         align-self: center;
     }
+
+    .line {
+        width: 90%;
+        border-bottom: 2px #e4e5e7 solid;
+        margin-bottom: 20px;
+    }
 }
-.icons img {
-    width: 30px;
-    height: 30px;
+
+
+
+.dataContacts {
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    
+    p {
+        margin: 0 auto;
+    }
+    
 }
+
+.icons {
+
+    img {
+        width: 30px;
+        height: 30px;
+    }
+   
+}
+
+.titleFooter {
+    margin-bottom: 20px;
+}
+
+.iconsSNet {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.iconChat {
+    visibility: hidden;
+}
+
