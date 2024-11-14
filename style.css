@@ -16,7 +16,7 @@ nav {
     display: flex;
     justify-content: space-between;
 
-    
+    background: beige;
 }
 .Space-Menu {
     position: relative;
@@ -39,6 +39,7 @@ nav {
     .Menu2 {
         position: relative;
         z-index: 1;
+        /*opacity: 0;*/
         display: flex;
         
         width: 90%;
@@ -54,10 +55,12 @@ nav {
 .Item-Menu2 {
     p {
         position: relative;
+
+        cursor: pointer;
     }
     ul {
         position: absolute;
-        margin-top: 25px;
+        margin-top: 32px;
 
         height: auto;
 
@@ -66,7 +69,32 @@ nav {
         box-shadow: 5px 5px 10px #b3b8b8;
         background: white;
         border-radius: 7px;
+
+        opacity: 0;
+        transition: opacity 800ms;
+        transition-delay: 600ms;
     }
+}
+
+.Item-Menu2-1:hover .Lista-Menu2-Hogar {
+    opacity: 1;
+    transition: opacity 800ms;
+    transition-delay: 600ms;
+}
+.Item-Menu2-2:hover .Lista-Menu2-Vestuario {
+    opacity: 1;
+    transition: opacity 800ms;
+    transition-delay: 600ms;
+}
+.Item-Menu2-3:hover .Lista-Menu2-Accesorios {
+    opacity: 1;
+    transition: opacity 800ms;
+    transition-delay: 600ms;
+}
+.Item-Menu2-4:hover .Lista-Menu2-Tecnologia {
+    opacity: 1;
+    transition: opacity 800ms;
+    transition-delay: 600ms;
 }
 
 ul {
@@ -81,8 +109,10 @@ li {
     margin-bottom: 5px;
 }
 
+
+
 .Primer-menu {
-    margin-top: 30px;
+    margin-top: 50px;
     
     position: absolute;
     
@@ -188,6 +218,8 @@ li {
     display: flex;
 
     position: relative;
+
+    cursor: pointer;
 /*
     p {
         margin-left: -60px;
