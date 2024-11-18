@@ -39,7 +39,7 @@ nav {
     .Menu2 {
         position: relative;
         z-index: 1;
-        /*opacity: 0;*/
+        opacity: 0;
         display: flex;
         
         width: 90%;
@@ -159,7 +159,7 @@ li {
     
     transform: translateX(30px);
     transition-delay: 2s;
-    transition: transform 1.4s linear;
+    transition: transform 500ms linear;
     
     
 /*
@@ -170,7 +170,7 @@ li {
 }
 .Primer-menu :nth-child(1):hover .menu-vestuario {
     opacity: 0;
-    transition: opacity 10ms;
+    /*transition: opacity 10ms;*/
 }
 
 .Primer-menu :nth-child(2):hover .menu-vestuario {
@@ -181,12 +181,13 @@ li {
 
     transform: translateX(30px);
     transition-delay: 2s;
-    transition: transform 1.4s linear;
+    transition: transform 500ms linear;
 
 } 
-.Primer-menu :nth-child(2):hover .menu-hogar {
+.Primer-menu :nth-child(2):hover .menu-hogar,
+.Primer-menu :nth-child(2):hover .menu-accesorios {
     opacity: 0;
-    transition: opacity 10ms;
+    /*transition: opacity 10ms;*/
 }
 
 .Primer-menu :nth-child(3):hover .menu-accesorios {
@@ -197,9 +198,14 @@ li {
 
     transform: translateX(30px);
     transition-delay: 2s;
-    transition: transform 1.4s linear;
+    transition: transform 500ms linear;
 
 } 
+.Primer-menu :nth-child(3):hover .menu-vestuario,
+.Primer-menu :nth-child(3):hover .menu-tecnologia {
+    opacity: 0;
+    /*transition: opacity 10ms;*/
+}
 
 .Primer-menu :nth-child(4):hover .menu-tecnologia {
         
@@ -209,10 +215,20 @@ li {
 
     transform: translateX(30px);
     transition-delay: 2s;
-    transition: transform 1.4s linear;
+    transition: transform 500ms linear;
 
 } 
+.Primer-menu :nth-child(4):hover .menu-accesorios {
+    opacity: 0;
+    /*transition: opacity 10ms;*/
+}
 
+.menu-vestuario li:hover .menu-hogar,
+.menu-vestuario li:hover .menu-accesorios,
+.menu-vestuario li:hover .menu-tecnologia {
+    opacity: 0;
+    visibility: hidden;
+}
 
 .Menu {
     display: flex;
@@ -378,5 +394,85 @@ footer {
 
 .iconChat {
     visibility: hidden;
+}
+
+
+@media (min-width: 768px) {
+
+    .Space-Menu {
+    
+        .Menu {
+            
+            z-index: 1;
+            
+        }
+        .Menu2 {
+            
+            z-index: 2;
+            opacity: 1;
+            
+        }
+    }
+    
+    .listProd {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .producto {
+        width: 41.5%;
+    }
+
+    footer {
+        padding-bottom: 20px;
+    }
+    .contacts {
+        width: 83%;
+        display: flex;
+        justify-content: space-around;
+
+        .dataContacts, .iconsSNet {
+            width: 50%;
+        }
+        .iconsSNet {
+            justify-content: space-around;
+            
+            padding: 0 25px 0 25px;
+        }
+        .iconChat {
+            width: 0;
+        }
+    }
+
+}
+
+@media (min-width: 1024px) {
+    
+    .producto {
+        width: 27.6%;
+    }
+
+    .contacts {
+        
+        .dataContacts, .iconsSNet, .iconChat {
+            width: 33.33%;
+        }
+        .iconsSNet {
+            justify-content: space-around;
+            padding: 0 25px 0 25px;
+        }
+        .iconChat {
+            visibility: visible;
+            display: flex;
+            justify-content: center;
+
+            img {
+                scale: 1.5;
+            }
+            
+            
+            
+        }
+    }
+
 }
 
