@@ -3,13 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    
     <title>Document</title>
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
     <nav>
         <div class="Name">
-            <p>Tu tienda</p>
+            <h1 class="Titulo">Tu tienda</h1>
         </div>
         
         <div class="Space-Menu">
@@ -19,7 +21,7 @@
                 </svg>
                 
                 <ul class="Primer-menu">
-                    <li><a href="/">Hogar</a>
+                    <li class="main-item"><a class="main-item1" href="/">Hogar</a>
                     <ul class="Segundo-menu menu-hogar">
                         <li><a href="/">Ropa de cama</a></li>
                         <li><a href="/">Adornos</a></li>
@@ -28,7 +30,7 @@
                         <li><a href="/">Cocina</a></li>
                         <li><a href="/">Electrodomesticos</a></li>
                     </ul></li>
-                    <li class="vestuario"><a href="/">Vestuario</a>
+                    <li class="main-item vestuario"><a href="/">Vestuario</a>
                         <ul class="Segundo-menu menu-vestuario">
                             <li><a href="/">Camisas</a></li>
                             <li><a href="/">Camisetas</a></li>
@@ -42,7 +44,7 @@
                             <li><a href="/">Calzado</a></li>
                                 
                         </ul></li>
-                    <li><a href="/">Accesorios</a>
+                    <li class="main-item"><a href="/">Accesorios</a>
                         <ul class="Segundo-menu menu-accesorios">
                             <li><a href="/">Relojes</a></li>
                             <li><a href="/">Perfumes</a></li>
@@ -50,7 +52,7 @@
                             <li><a href="/">Bolsos</a></li>
                             <li><a href="/">Equipajes</a></li>                          
                         </ul></li>
-                    <li><a href="/">Tecnología</a>
+                    <li class="main-item"><a href="/">Tecnología</a>
                         <ul class="Segundo-menu menu-tecnologia">
                             <li><a href="/">Celulares</a></li>
                             <li><a href="/">Computadores</a></li>
@@ -127,24 +129,7 @@
     </nav>
     
     <section>
-<!--
-        <div class="w-full h-auto p-10">
-            <div class="w-full h-auto flex flex-col space-y-5 justify-center items-center py-6 lg:flex-row lg:space-x-40 lg:space-y-0">
-                
-                <p class="text-4xl text-fourth font-bold dark:text-white">Hola Christian</p>
-                                
-                <img class="w-48 h-64 rounded-md shadow-md lg:w-32 lg:h-48" src="./img/CAM00655.jpg">
-                                
-            </div>
-            <p class="text-sixth dark:text-fifth">
-                En Platzi Travel tienes todo lo que necesitas para tus vacaciones en un solo lugar con las mejores ofertas de paquetes para vivir experiencias inolvidables. <br>
-                También te ofrecemos atención personalizada de profesionales expertos en viajes y turismo que te ayudarán a encontrar las mejores ofertas en tu paquete turístico. <br> Comprando un Paquete con Platzi Travel tienes tu viaje en una sola compra que te puede incluir el tiquete aéreo y el alojamiento a un precio más económico que si lo compras por separado. <br>
-                Si quieres hablar con un asesor, puedes visitarnos presencialmente en las sucursales de Platzi Travel, agendar una videollamada o llamar al call center y reservar. <br>
-                En Platzi Travel encuentras todos los medios de pago que te permitirán disfrutar tus vacaciones pagando en cuotas para aprovechar las mejores promociones con distintas tarjetas y bancos. <br>
-                No importa cuál sea tu destino preferido, con nuestros paqutes a los lugares más especiales del mundo, Platzi Travel tiene todo lo que buscas para hacer realidad el viaje de tus sueños. <br>
-            </p>
-            
-        </div> -->
+
        
         <div class="listProd">
             <div class="producto">
@@ -273,30 +258,24 @@
         </div>
             
 
+        
+
+    </section>
+
+    <footer>
+
         <div class="options">
-            <!--
-            <p class="text-3xl font-bold text-fourth dark:text-white">Compra con la forma de pago que prefieras</p>
-            <div class="w-full h-auto py-7 justify-between space-x-2 flex">
-                <img class="w-16 h-16 min-w-10 min-h-10 hover:scale-110" src="./img/MCard.jpg" alt="Logo-MasterCard">
-                <img class="w-16 h-16 min-w-10 min-h-10 hover:scale-110" src="./img/Visa.jpg" alt="Logo-Visa">
-                <img class="w-16 h-16 min-w-10 min-h-10 hover:scale-110" src="./img/AExpress.jpg" alt="Logo-AmericanExpress">
-                <img class="w-16 h-16 min-w-10 min-h-10 hover:scale-110" src="./img/CMR.jpg" alt="Logo-CMR">
-                <img class="w-16 h-16 min-w-10 min-h-10 hover:scale-110" src="./img/PSE.jpg" alt="Logo-PSE">
-            </div> -->
+            
             <p>Sobre nosotros</p>
             <p>Términos y condiciones</p>
             <p>Medios de pago</p>
             <p>Políticas de privacidad</p>
         </div>
-
-    </section>
-
-    <footer>
         
         <div class="line"></div>
         
         <div class="titleFooter">
-            <h3>¡Contáctanos y síguenos!</h3>
+            <h2>¡Contáctanos y síguenos!</h2>
         </div>
             
         <div class="contacts">
@@ -306,13 +285,13 @@
                 <p>Línea gratuita: 018000-123456</p>
             </div>
             <div class="icons iconsSNet">
-                <img class="w-10 h-10 hover:scale-110" src="./imgs/twitter5.jpg" alt="Twitter">
-                <img class="w-10 h-10 hover:scale-110" src="./imgs/Facebook5.jpg" alt="Facebook">
-                <img class="w-10 h-10 hover:scale-110" src="./imgs/Instagram.jpg" alt="Instagram">
-                <img class="w-10 h-10 hover:scale-110" src="./imgs/Youtube.jpg" alt="Youtube">
+                <img class="twit" src="./imgs/twitter5.jpg" alt="Twitter">
+                <img class="face" src="./imgs/Facebook5.jpg" alt="Facebook">
+                <img class="inst" src="./imgs/Instagram.jpg" alt="Instagram">
+                <img class="yout" src="./imgs/Youtube.jpg" alt="Youtube">
             </div>
             <div class="icons iconChat">
-                <img class="w-12 h-12 hover:scale-110" src="./imgs/Chatea.jpg" alt="Chatea">
+                <img class="chat" src="./imgs/Chatea.jpg" alt="Chatea">
             </div>
             
                 

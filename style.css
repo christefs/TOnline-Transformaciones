@@ -1,8 +1,23 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+    --main-family: "Montserrat", serif;
+    --main-weight: 600;
+    --second-family: "Roboto", sans-serif;
+    --second-weight: 500;
+    --color-font: #78716C;
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
+
 
 body {
     width: 100%;
@@ -16,12 +31,27 @@ nav {
     display: flex;
     justify-content: space-between;
 
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+    
+
     background: beige;
+
+    
+    h1 {
+        font-family: var(--main-family);
+        font-weight: var(--main-weight);
+        font-size: 23px;
+        color: var(--color-font);
+
+       
+    }
+
 }
 .Space-Menu {
     position: relative;
-    background: lightgreen;
-    width: 75%;
+    width: 65%;
 
     display: flex;
     justify-content: center;
@@ -31,10 +61,9 @@ nav {
     .Menu {
         position: absolute;
         z-index: 2;
-        background: pink;
-
+        
         margin: 0 auto;
-        /*left: 40%*/
+        
     }
     .Menu2 {
         position: relative;
@@ -45,18 +74,18 @@ nav {
         width: 90%;
         justify-content: space-around;
         
-        /*visibility: hidden;*/
-        /*left: 22%;
-        margin: 0 auto;*/
-        background: powderblue;
+        
     }
 }
 
 .Item-Menu2 {
     p {
         position: relative;
+        /*cursor: pointer;*/
 
-        cursor: pointer;
+        font-family: var(--second-family);
+        font-weight: var(--second-weight);
+        color: var(--color-font);
     }
     ul {
         position: absolute;
@@ -127,8 +156,10 @@ li {
     opacity: 0;
     transition: opacity 800ms;
     transition-delay: 600ms; 
+ 
     
 }
+
 
 .Segundo-menu {
     
@@ -162,11 +193,6 @@ li {
     transition: transform 500ms linear;
     
     
-/*
-    transform: translateX(80px);
-    transition: transform 1s linear;
-    transition-delay: 800ms; */
-        
 }
 .Primer-menu :nth-child(1):hover .menu-vestuario {
     opacity: 0;
@@ -236,10 +262,12 @@ li {
     position: relative;
 
     cursor: pointer;
-/*
+
     p {
-        margin-left: -60px;
-    }*/
+        font-family: var(--second-family);
+        font-weight: var(--second-weight);
+        color: var(--color-font);
+    }
 
 }
 
@@ -252,7 +280,11 @@ li {
 }
 
 section {
-    
+    position: relative;
+    top: 12vh;
+    margin-bottom: 60px;
+    /*bottom: 16vh;*/
+
     padding: 20px;
 }
 
@@ -291,8 +323,7 @@ section {
 
     img {
         
-       /* min-width: 250px;
-        max-width: 400px; */
+       
         width: 90%;
         height: 90%;
 
@@ -310,13 +341,7 @@ section {
 .Description {
     transform: rotateY(180deg);
     padding: 20px;
-    /*display: flex;
-    flex-direction: column;
-
-    p {
-        margin: 0 auto;
-    }*/
-
+    
     p:nth-child(1) {
         font-size: 20px;
         font-weight: 700;
@@ -332,21 +357,16 @@ section {
     
 }
 
-.options {
-    display: flex;
-    justify-content: space-between;
-    padding: 10px;
-    margin-top: 20px;
 
-    p {
-        margin-right: 7px;
-    }
-}
 
 footer {
+
+    position: relative;
+    /*top: 6vw;*/
     
     display: flex;
     flex-direction: column;
+    background: beige;
     
     div {
         align-self: center;
@@ -354,8 +374,28 @@ footer {
 
     .line {
         width: 90%;
-        border-bottom: 2px #e4e5e7 solid;
+        border-bottom: 2px #c4c7cd solid;
         margin-bottom: 20px;
+    }
+}
+
+.options {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    margin-top: 20px;
+
+    width: 90%;
+
+    p {
+        margin-right: 7px;
+
+        font-family: var(--second-family);
+        font-weight: var(--second-weight);
+        color: var(--color-font);
+        font-size: 15px;
+
+        cursor: pointer;
     }
 }
 
@@ -369,42 +409,73 @@ footer {
     
     p {
         margin: 0 auto;
+        color: var(--color-font);
     }
     
 }
 
-.icons {
-
-    img {
-        width: 30px;
-        height: 30px;
-    }
-   
-}
 
 .titleFooter {
     margin-bottom: 20px;
+
+    h2 {
+        font-family: var(--main-family);
+        font-weight: var(--main-weight);
+        font-size: 23px;
+        color: var(--color-font);
+    }
 }
 
 .iconsSNet {
     margin-top: 20px;
     display: flex;
     justify-content: space-between;
+
+    img {
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+    }
 }
+.iconsSNet .twit:hover,
+.iconsSNet .face:hover,
+.iconsSNet .inst:hover,
+.iconsSNet .yout:hover {
+    scale: 1.2;
+}
+
 
 .iconChat {
     visibility: hidden;
+
+    img {
+        width: 45px;
+        height: 45px;
+        cursor: pointer;
+    }
+}
+.iconChat .chat:hover {
+    scale: 1.2;
 }
 
 
 @media (min-width: 768px) {
 
+    nav h1 {
+        font-size: 25px;
+    }
+
+    .Item-Menu2 p {
+        cursor: pointer;
+    }
+         
+    
     .Space-Menu {
     
         .Menu {
             
             z-index: 1;
-            
+            opacity: 0;
         }
         .Menu2 {
             
@@ -424,6 +495,14 @@ footer {
 
     footer {
         padding-bottom: 20px;
+
+        .options p {
+            font-size: 17px;
+        }
+
+        .titleFooter h2 {
+            font-size: 25px;
+        }
     }
     .contacts {
         width: 83%;
@@ -465,12 +544,6 @@ footer {
             display: flex;
             justify-content: center;
 
-            img {
-                scale: 1.5;
-            }
-            
-            
-            
         }
     }
 
